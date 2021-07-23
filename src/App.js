@@ -1,20 +1,15 @@
-import logo from './logo.svg';
 import React, {useState, useEffect} from 'react';
+import axios from 'axios'
 import './App.css';
 
 function App() {
-  // message 초기값을 ""으로 설정.
-  const [message, setMessage] = useState("");
-  // useEffect(함수,배열) : 컴포넌트가 화면에 나타났을(마운트)때 자동 실행.
-  useEffect( () => {
-
-    // fetch(url,options) : HTTP 요청 함수
-    fetch('/hello')
-        .then(response => response.text())
-        .then(message => {
-          setMessage(message);
-        });
-  },[])
+  
+  let [message, setMessage] = useState("");
+  const sburl = "http://localhost:8080";
+  axios.get(sburl+"/hello").then(res=>{
+    console.log(res.data);
+    setMessage(res.data);
+  },[]);
 
   return (
       <div className="App">

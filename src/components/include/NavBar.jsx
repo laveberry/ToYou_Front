@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar,Container, Nav, NavDropdown } from 'react-bootstrap';
+import logo from '../../logo.svg';
 
 export default function(){
     return (
@@ -9,9 +10,9 @@ export default function(){
                 <Navbar.Brand href="#home">
                         <img
                             alt=""
-                            src="../../logo.svg"
-                            width="30"
-                            height="30"
+                            src={logo}
+                            width="30px"
+                            height="30px"
                             className="d-inline-block align-top"
                             />{' '}
                     ToYou</Navbar.Brand>

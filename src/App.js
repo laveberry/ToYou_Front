@@ -1,8 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios'
 import './App.css';
-import {Header} from "./components/include/Header";
-import Footer from "./components/include/Footer";
+import Main from './components/main/Main';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   //[변수, 변수재정의] = useState("초기값")
@@ -15,14 +17,7 @@ function App() {
 
   return (
       <div className="App">
-        <Header></Header>
-        <header className="App-header">
-          <h1 className="App-title">{message}</h1>
-          <p>
-            메시지 출력
-          </p>
-        </header>
-        <Footer></Footer>
+        <Main></Main>
       </div>
   );
 }

@@ -10,3 +10,9 @@ yarn add react-redux
 //패키지.제이슨 업뎃???
 yarn package:install
 yarn upgrade
+
+//Git
+//커밋 리셋
+git reset 해당커밋
+강제푸시
+git push -f origin master

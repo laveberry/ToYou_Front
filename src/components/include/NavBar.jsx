@@ -1,6 +1,8 @@
 import React from 'react';
 import { Navbar,Container, Nav, NavDropdown } from 'react-bootstrap';
-import logo from '../../logo.svg';
+import logo from './test.png';
+import styles from './NavBar.css';
+import { className } from 'postcss-selector-parser';
 
 export default function(){
     return (
@@ -29,7 +31,6 @@ export default function(){
                     <Nav.Link href="#product">PRODUCT</Nav.Link>
                     <Nav.Link href="#best">BEST</Nav.Link>
                     <Nav.Link href="#sale">SALE</Nav.Link>
-
 
                     </Nav>
                     <Nav>

@@ -7,7 +7,7 @@ import { className } from 'postcss-selector-parser';
 export default function(){
     return (
         <>
-        <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
+        <Navbar collapseOnSelect expand="lg" variant="dark" style={{backgroundColor : "#6200EE"}}>
             <Container>
                 <Navbar.Brand href="#home">
                         <img

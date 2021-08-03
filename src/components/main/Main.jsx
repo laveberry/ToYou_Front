@@ -2,18 +2,21 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import {Header} from "../include/Header";
 import Footer from "../include/Footer";
+import applePink from "./applePink.png"
+import iphone from "./iphone.png"
 
 export default function(){
     return (
         <Container>
         <Row>
             <Col>
-                상단 이미지 추가 예정
+                <Header></Header>
             </Col>
         </Row>
+
         <Row>
             <Col>
-                <Header></Header>
+                <img src={iphone} width="100%" height="300px" />
             </Col>
         </Row>
 

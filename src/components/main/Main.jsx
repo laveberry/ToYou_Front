@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import {Header} from "../include/Header";
 import Footer from "../include/Footer";
 import applePink from "./applePink.png"
-import iphone from "./iphone.png"
+import iphone from "./iphone.PNG"
 
 export default function(){
     return (

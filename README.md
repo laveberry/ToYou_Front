@@ -16,3 +16,8 @@ yarn upgrade
 git reset 해당커밋
 강제푸시
 git push -f origin master
+
+//mysql 설치
+yarn add express body-parser mysql
+//노드몬은 서버 코드가 수정되면 서버를 다시 켜주는 모듈. 작업할때 편리성
+yarn add nodemon

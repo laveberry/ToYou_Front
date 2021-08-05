@@ -4,6 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+//db연결위한 express 서버
+// const express = require('express');
+// const app = express();
+// const PORT = process.env.port || 8000;
+
+// app.listen(PORT, ()=>{
+//     console.log(`running on port ${PORT}`);
+// });
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
